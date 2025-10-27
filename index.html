@@ -8,7 +8,7 @@
   body {
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 950px;
     line-height: 1.6;
     color: #222;
     background-color: #fafafa;
@@ -24,16 +24,43 @@
     border-bottom: 1px solid #999;
     padding-bottom: 4px;
   }
+  h3 {
+    margin-top: 1.5em;
+    color: #333;
+  }
   section { margin-bottom: 2.5em; }
-  ul { list-style-type: none; padding-left: 0; }
-  li::before { content: "• "; color: #555; }
   a { color: #0066cc; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  table {
+
+  /* ===== KEY DATES ===== */
+  table.dates {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1em;
     background: #fff;
+    margin-top: 1em;
+  }
+  table.dates td {
+    padding: 10px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+  }
+  table.dates td:first-child {
+    width: 25%;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+  }
+  table.dates small {
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  /* ===== SCHEDULE TABLE ===== */
+  table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 1em;
     font-size: 0.95em;
   }
   th, td {
@@ -46,12 +73,13 @@
   tr:nth-child(even) { background: #f9f9f9; }
   td[colspan] { background: #f4f4f4; font-style: italic; }
 
-  th:nth-child(1), td:nth-child(1) { width: 18%; }
-  th:nth-child(2), td:nth-child(2) { width: 27%; }
+  th:nth-child(1), td:nth-child(1) { width: 15%; }
+  th:nth-child(2), td:nth-child(2) { width: 25%; }
   th:nth-child(3), td:nth-child(3) { width: 25%; }
-  th:nth-child(4), td:nth-child(4) { width: 30%; }
+  th:nth-child(4), td:nth-child(4) { width: 35%; }
 
-  @media (max-width: 700px) {
+  /* ===== MOBILE ===== */
+  @media (max-width: 720px) {
     table, thead, tbody, th, td, tr { display: block; }
     th { display: none; }
     tr { margin-bottom: 1em; border-bottom: 2px solid #ddd; padding-bottom: 0.5em; }
@@ -87,85 +115,89 @@
 <b>Venue:</b> Dr. Poe Lecture Hall</p>
 
 <section>
-<h2>📅 KEY DATES</h2>
-<ul>
-  <li><b>Session Voting:</b> Oct 28 (Tue) 07:00 – Nov 2 (Sun) 23:59  
-  <br>All students must vote to choose one of two presentation weeks.</li>
-
-  <li><b>Abstract Submission:</b> Oct 28 (Tue) 07:00 – Nov 16 (Sun) 23:59  
-  <br>Submit your PDF abstract using the assigned template.<br>
-  First-year students → <a href="#">Template A – Motivation/Background</a><br>
-  Continuing students (Year 2 and beyond) → <a href="#">Template B – Research Summary</a>
-  </li>
-
-  <li><b>Program Finalization:</b> Nov 19 (Wed)  
-  <br>Updated schedule will be posted here after reviewing all submissions.</li>
-
-  <li><b>Slides (optional upload):</b>  
-  <br>Bring final USB copy by 08:00 on Symposium day before sign-in.  
-  <br>Alternatively, upload slides before the Symposium day if you want them tested on the shared computer.</li>
-
-  <li><b>Symposium:</b> Nov 29 (Sat) or Dec 6 (Sat), 09:00 – 12:00 (TBD)  
-  <br>Arrive between 08:00 – 08:50 for sign-in and setup.</li>
-
-  <li><b>Results:</b>  
-  <br>Peer feedback and evaluation summaries will be emailed to all participants.</li>
-</ul>
+<h2>KEY DATES</h2>
+<table class="dates">
+  <tr>
+    <td>Session Voting</td>
+    <td>Oct 28 (Tue) 07:00 – Nov 2 (Sun) 23:59<br>
+    <small>All students must vote to choose one of two presentation weeks.</small></td>
+  </tr>
+  <tr>
+    <td>Abstract Submission</td>
+    <td>Oct 28 (Tue) 07:00 – Nov 16 (Sun) 23:59<br>
+    Submit your PDF abstract using the assigned template.<br>
+    First-year students → 
+    <a href="https://docs.google.com/document/d/14Y5Fv77OaYBSmgLoMyLkP4aXYmCylpV-/edit?usp=drive_link" target="_blank">
+      Template A – Motivation/Background</a><br>
+    Continuing students → 
+    <a href="https://docs.google.com/document/d/1HP2rvSOvMeuNSEr-KCXkve-QcU-o9ysJ/edit?usp=drive_link" target="_blank">
+      Template B – Research Summary</a></td>
+  </tr>
+  <tr>
+    <td>Program Finalization</td>
+    <td>Nov 19 (Wed)<br>
+    <small>Updated schedule will be posted here after reviewing all submissions.</small></td>
+  </tr>
+  <tr>
+    <td>Slides (optional upload)</td>
+    <td>Bring final USB copy by 08:00 on Symposium day before sign-in.<br>
+    Alternatively, upload slides before the Symposium day if you want them tested on the shared computer.</td>
+  </tr>
+  <tr>
+    <td>Symposium</td>
+    <td>Nov 29 (Sat) or Dec 6 (Sat), 09:00 – 12:00 (TBD)<br>
+    <small>Arrive between 08:00 – 08:50 for sign-in and setup.</small></td>
+  </tr>
+  <tr>
+    <td>Results</td>
+    <td>Peer feedback and evaluation summaries will be emailed to all participants.</td>
+  </tr>
+</table>
 </section>
 
 <section>
-<h2>🗓 Preliminary Schedule (09:00 – 12:00)</h2>
+<h2>Preliminary Schedule (09:00 – 12:00)</h2>
 
 <h3>09:00 – 09:05  Opening Remarks</h3>
 <p>Prof. Dharma Yu & Teaching Assistant</p>
 
-<h3>SESSION 1 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
-<table>
+<h3>Session 1 · First-year Talks (Each talk 5 min + 2 min Q&A)</h3>
+<table class="schedule">
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>09:05 – 09:12</td><td>Yung-Hung Huang</td><td>Chun-Wei Chen</td><td></td></tr>
-<tr><td>09:12 – 09:19</td><td>Yu-Chieh Huang</td><td>Kuei-Hsien Chen</td><td></td></tr>
-<tr><td>09:19 – 09:26</td><td>Chen-Yu (Jack) Hung</td><td>Chun-Wei Chen</td><td></td></tr>
+<tr><td>09:05 – 09:12</td><td>Yung-Hung Huang</td><td>Chun-Wei Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>09:12 – 09:19</td><td>Yu-Chieh Huang</td><td>Kuei-Hsien Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>09:19 – 09:26</td><td>Chen-Yu (Jack) Hung</td><td>Chun-Wei Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
 <tr><td colspan="4"><i>09:26 – 09:33  Session Transition & Setup</i></td></tr>
-<tr><td>09:33 – 09:40</td><td>Thipwadee Klom-In</td><td>Szu-Yuan Chen</td><td></td></tr>
-<tr><td>09:40 – 09:47</td><td>Kongpop Limwatcharagul</td><td></td><td></td></tr>
-<tr><td>09:47 – 09:54</td><td>Kresanti Dewi Ngadimin</td><td>Sung Jan Lin</td><td></td></tr>
-<tr><td colspan="4"><b>09:54 – 10:08 ☕ Session Transition & Break</b></td></tr>
+<tr><td>09:33 – 09:40</td><td>Thipwadee Klom-In</td><td>Szu-Yuan Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>09:40 – 09:47</td><td>Kongpop Limwatcharagul</td><td></td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>09:47 – 09:54</td><td>Kresanti Dewi Ngadimin</td><td>Sung Jan Lin</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td colspan="4"><b>09:54 – 10:08  Break</b></td></tr>
 </table>
 
-<h3>SESSION 2 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
-<table>
+<h3>Session 2 · Continuing Students (Each talk 10 min + 2 min Q&A)</h3>
+<table class="schedule">
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td>Tsyr-Yan Dharma Yu</td><td></td></tr>
-<tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td><td>Kuei-Hsien Chen</td><td></td></tr>
+<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td>Tsyr-Yan Dharma Yu</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td><td>Kuei-Hsien Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
 <tr><td colspan="4"><i>10:32 – 10:38  Session Transition & Setup</i></td></tr>
 </table>
 
-<h3>SESSION 3 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
-<table>
+<h3>Session 3 · First-year Talks (Each talk 5 min + 2 min Q&A)</h3>
+<table class="schedule">
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>10:38 – 10:45</td><td>Abhay Raju</td><td>Kevin C.-W. Wu</td><td></td></tr>
-<tr><td>10:45 – 10:52</td><td>Arbaz Akhtar</td><td></td><td></td></tr>
-<tr><td>10:52 – 10:59</td><td>Rimsha Amjad</td><td></td><td></td></tr>
-<tr><td colspan="4"><b>10:59 – 11:08 ☕ Session Transition & Break</b></td></tr>
+<tr><td>10:38 – 10:45</td><td>Abhay Raju</td><td>Kevin C.-W. Wu</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>10:45 – 10:52</td><td>Arbaz Akhtar</td><td></td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>10:52 – 10:59</td><td>Rimsha Amjad</td><td></td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td colspan="4"><b>10:59 – 11:08  Break</b></td></tr>
 </table>
 
-<h3>SESSION 4 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
-<table>
+<h3>Session 4 · Continuing Students (Each talk 10 min + 2 min Q&A)</h3>
+<table class="schedule">
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>11:08 – 11:20</td><td>Chun-Wei Chou</td><td>Ming-Hsi Chiang</td><td></td></tr>
-<tr><td>11:20 – 11:32</td><td>Yen-Ting Lin</td><td>Chi-Kung Ni</td><td></td></tr>
+<tr><td>11:08 – 11:20</td><td>Chun-Wei Chou</td><td>Ming-Hsi Chiang</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>11:20 – 11:32</td><td>Yen-Ting Lin</td><td>Chi-Kung Ni</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
 <tr><td colspan="4"><i>11:32 – 12:00  Discussion, Group Photo & Closing Remarks</i></td></tr>
 </table>
-</section>
-
-<section>
-<h2>💡 NOTES FOR ALL PARTICIPANTS</h2>
-<ul>
-  <li>👔 <b>Attire:</b> Please wear business casual attire. Avoid shorts, slippers, or sandals.</li>
-  <li>🕗 <b>Arrival:</b> 08:00–09:00 → Sign in and test your slides during this time.</li>
-  <li>💾 <b>Slides:</b> Bring a USB copy of your slides. (Optional) You may also upload in advance — we’ll check it on the shared computer.</li>
-  <li>⏱️ <b>Timing:</b> Talk length follows course rule (5+2 min or 10+2 min). A large timer will count down, and a bell will signal when time is up.</li>
-</ul>
 </section>
 
 <footer>
