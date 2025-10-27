@@ -98,6 +98,18 @@
     td:nth-of-type(4)::before { content: "Title:"; }
   }
 
+  /* ===== HIDE EMPTY PDF LINKS ===== */
+  a[href="#"], a[href=""], a:not([href]) {
+    display: none;
+  }
+
+  /* ===== OPTIONAL: GREY “not yet” PLACEHOLDER ===== */
+  td:has(a[href="#"])::after {
+    content: " (not yet)";
+    color: #aaa;
+    font-style: italic;
+  }
+
   footer {
     border-top: 1px solid #ccc;
     margin-top: 40px;
@@ -177,7 +189,7 @@
 <h3>Session 2 · Continuing Students (Each talk 10 min + 2 min Q&A)</h3>
 <table class="schedule">
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td>Tsyr-Yan Dharma Yu</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
+<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td>Tsyr-Yan Dharma Yu</td><td>[ ] (<a href="abstracts/Liang_YT.pdf">PDF</a>)</td></tr>
 <tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td><td>Kuei-Hsien Chen</td><td>[ ] (<a href="#">PDF</a>)</td></tr>
 <tr><td colspan="4"><i>10:32 – 10:38  Session Transition & Setup</i></td></tr>
 </table>
