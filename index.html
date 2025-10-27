@@ -9,36 +9,39 @@
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     margin: 40px auto;
     max-width: 850px;
-    line-height: 1.7;
+    line-height: 1.6;
     color: #222;
     background-color: #fafafa;
-  }
-  h1, h2, h3 {
-    text-align: left;
   }
   h1 {
     text-align: center;
     font-size: 2em;
     border-bottom: 2px solid #ccc;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.3em;
   }
   h2 {
     margin-top: 2em;
     border-bottom: 1px solid #999;
     padding-bottom: 4px;
   }
-  pre {
-    background: #f4f4f4;
-    padding: 15px;
-    border-radius: 6px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  a { color: #0066cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  section { margin-bottom: 2.5em; }
   ul { list-style-type: none; padding-left: 0; }
   li::before { content: "• "; color: #555; }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    background: #fff;
+  }
+  th, td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  th { background: #efefef; }
+  tr:nth-child(even) { background: #f9f9f9; }
   footer {
     border-top: 1px solid #ccc;
     margin-top: 40px;
@@ -46,17 +49,6 @@
     color: #666;
     font-size: 0.9em;
     padding-top: 10px;
-  }
-  .emoji {
-    font-size: 1.2em;
-    margin-right: 4px;
-  }
-  section {
-    margin-bottom: 3em;
-  }
-  .line {
-    letter-spacing: 1px;
-    color: #555;
   }
 </style>
 </head>
@@ -68,86 +60,83 @@
 
 <section>
 <h2>📅 KEY DATES</h2>
-<p class="line">────────────────────────────────────────────</p>
 <ul>
-  <li><b>Session Voting:</b> Oct 28 (Tue) 07:00 – Nov 2 (Sun) 23:59<br>
-  All students must vote to choose one of two presentation weeks.</li>
+  <li><b>Session Voting:</b> Oct 28 (Tue) 07:00 – Nov 2 (Sun) 23:59  
+  <br>All students must vote to choose one of two presentation weeks.</li>
 
-  <li><b>Abstract Submission:</b> Oct 28 (Tue) 07:00 – Nov 16 (Sun) 23:59<br>
-  Submit your PDF abstract using the assigned template.<br>
-  First-year students → 
-  <a href="#">Template A – Motivation/Background</a><br>
-  Continuing students (Year 2 and beyond) → 
-  <a href="#">Template B – Research Summary</a>
+  <li><b>Abstract Submission:</b> Oct 28 (Tue) 07:00 – Nov 16 (Sun) 23:59  
+  <br>Submit your PDF abstract using the assigned template.<br>
+  First-year students → <a href="#">Template A – Motivation/Background</a><br>
+  Continuing students (Year 2 and beyond) → <a href="#">Template B – Research Summary</a>
   </li>
 
-  <li><b>Program Finalization:</b> Nov 19 (Wed)<br>
-  Updated schedule will be posted here after reviewing all submissions.</li>
+  <li><b>Program Finalization:</b> Nov 19 (Wed)  
+  <br>Updated schedule will be posted here after reviewing all submissions.</li>
 
-  <li><b>Slides (optional upload):</b><br>
-  Bring final USB copy by 08:00 on Symposium day before sign-in.<br>
-  Alternatively, upload slides before the Symposium day if you want them tested on the shared computer.</li>
+  <li><b>Slides (optional upload):</b>  
+  <br>Bring final USB copy by 08:00 on Symposium day before sign-in.  
+  <br>Alternatively, upload slides before the Symposium day if you want them tested on the shared computer.</li>
 
-  <li><b>Symposium:</b> Nov 29 (Sat) or Dec 6 (Sat), 09:00 – 12:00 (TBD)<br>
-  Arrive between 08:00 – 08:50 for sign-in and setup.</li>
+  <li><b>Symposium:</b> Nov 29 (Sat) or Dec 6 (Sat), 09:00 – 12:00 (TBD)  
+  <br>Arrive between 08:00 – 08:50 for sign-in and setup.</li>
 
-  <li><b>Results:</b><br>
-  Peer feedback and evaluation summaries will be emailed to all participants.</li>
+  <li><b>Results:</b>  
+  <br>Peer feedback and evaluation summaries will be emailed to all participants.</li>
 </ul>
 </section>
 
 <section>
 <h2>🗓 Preliminary Schedule (09:00 – 12:00)</h2>
-<p class="line">────────────────────────────────────────────</p>
-<pre>
-09:00 – 09:05  Opening Remarks  
-Prof. Dharma Yu & Teaching Assistant  
 
-═══════════ SESSION 1 · FIRST-YEAR TALKS ═══════════  
-(Each talk 5 min + 2 min Q&A)
-09:05 – 09:12  Yung-Hung Huang  
-09:12 – 09:19  Yu-Chieh Huang  
-09:19 – 09:26  Chen-Yu Hung  
+<h3>09:00 – 09:05  Opening Remarks</h3>
+<p>Prof. Dharma Yu & Teaching Assistant</p>
 
-09:26 – 09:33  Session Transition & Setup  
+<h3>SESSION 1 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
+<table>
+<tr><th>Time</th><th>Presenter</th></tr>
+<tr><td>09:05 – 09:12</td><td>Yung-Hung Huang</td></tr>
+<tr><td>09:12 – 09:19</td><td>Yu-Chieh Huang</td></tr>
+<tr><td>09:19 – 09:26</td><td>Chen-Yu Hung</td></tr>
+<tr><td colspan="2"><i>09:26 – 09:33  Session Transition & Setup</i></td></tr>
+<tr><td>09:33 – 09:40</td><td>Thipwadee Klom-In</td></tr>
+<tr><td>09:40 – 09:47</td><td>Kongpop Limwatcharagul</td></tr>
+<tr><td>09:47 – 09:54</td><td>Kresanti Dewi Ngadimin</td></tr>
+<tr><td colspan="2"><b>09:54 – 10:08 ☕ Session Transition & Break</b></td></tr>
+</table>
 
-09:33 – 09:40  Thipwadee Klom-In  
-09:40 – 09:47  Kongpop Limwatcharagul  
-09:47 – 09:54  Kresanti Dewi Ngadimin  
+<h3>SESSION 2 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
+<table>
+<tr><th>Time</th><th>Presenter</th></tr>
+<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td></tr>
+<tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td></tr>
+<tr><td colspan="2"><i>10:32 – 10:38  Session Transition & Setup</i></td></tr>
+</table>
 
-09:54 – 10:08  ☕ Session Transition & Break  
+<h3>SESSION 3 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
+<table>
+<tr><th>Time</th><th>Presenter</th></tr>
+<tr><td>10:38 – 10:45</td><td>Abhay Raju</td></tr>
+<tr><td>10:45 – 10:52</td><td>Arbaz Akhtar</td></tr>
+<tr><td>10:52 – 10:59</td><td>Rimsha Amjad</td></tr>
+<tr><td colspan="2"><b>10:59 – 11:08 ☕ Session Transition & Break</b></td></tr>
+</table>
 
-═══════════ SESSION 2 · CONTINUING STUDENTS ═══════════  
-(Each talk 10 min + 2 min Q&A)
-10:08 – 10:20  Yi-Tsai Liang  
-10:20 – 10:32  Shuo-Yun Chang  
-
-10:32 – 10:38  Session Transition & Setup  
-
-═══════════ SESSION 3 · FIRST-YEAR TALKS ═══════════  
-(Each talk 5 min + 2 min Q&A)
-10:38 – 10:45  Abhay Raju  
-10:45 – 10:52  Arbaz Akhtar  
-10:52 – 10:59  Rimsha Amjad  
-
-10:59 – 11:08  ☕ Session Transition & Break  
-
-═══════════ SESSION 4 · CONTINUING STUDENTS ═══════════  
-(Each talk 10 min + 2 min Q&A)
-11:08 – 11:20  Chun-Wei Chou  
-11:20 – 11:32  Yen-Ting Lin  
-
-11:32 – 12:00  Discussion, Group Photo & Closing Remarks
-</pre>
+<h3>SESSION 4 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
+<table>
+<tr><th>Time</th><th>Presenter</th></tr>
+<tr><td>11:08 – 11:20</td><td>Chun-Wei Chou</td></tr>
+<tr><td>11:20 – 11:32</td><td>Yen-Ting Lin</td></tr>
+<tr><td colspan="2"><i>11:32 – 12:00  Discussion, Group Photo & Closing Remarks</i></td></tr>
+</table>
 </section>
 
 <section>
 <h2>💡 NOTES FOR ALL PARTICIPANTS</h2>
 <ul>
-  <li>👔 <b>Attire</b>: Please wear business casual attire. Avoid shorts, slippers, or sandals.</li>
-  <li>🕗 <b>Arrival</b>: 08:00–09:00 → Sign in and test your slides during this time.</li>
-  <li>💾 <b>Slides</b>: Bring a USB copy of your slides. (Optional) You may also upload in advance — we’ll check it on the shared computer.</li>
-  <li>⏱️ <b>Timing</b>: Talk length follows course rule (5+2 min or 10+2 min). A large timer will count down, and a bell will signal when time is up.</li>
+  <li>👔 <b>Attire:</b> Please wear business casual attire. Avoid shorts, slippers, or sandals.</li>
+  <li>🕗 <b>Arrival:</b> 08:00–09:00 → Sign in and test your slides during this time.</li>
+  <li>💾 <b>Slides:</b> Bring a USB copy of your slides. (Optional) You may also upload in advance — we’ll check it on the shared computer.</li>
+  <li>⏱️ <b>Timing:</b> Talk length follows course rule (5+2 min or 10+2 min). A large timer will count down, and a bell will signal when time is up.</li>
 </ul>
 </section>
 
