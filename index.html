@@ -16,19 +16,19 @@
   h1 {
     text-align: center;
     font-size: 2em;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #666;
     padding-bottom: 0.3em;
-    color: #003366;
+    color: #111;
   }
   h2 {
     margin-top: 2em;
-    border-bottom: 2px solid #003366;
+    border-bottom: 1px solid #666;
     padding-bottom: 4px;
-    color: #003366;
+    color: #111;
   }
   h3 {
     margin-top: 1.5em;
-    color: #003366;
+    color: #111;
   }
   section { margin-bottom: 2.5em; }
   a { color: #003366; text-decoration: none; }
@@ -50,7 +50,7 @@
   table.dates td:first-child {
     width: 25%;
     font-weight: bold;
-    color: #003366;
+    color: #111;
     white-space: nowrap;
   }
   table.dates small {
@@ -74,19 +74,19 @@
     vertical-align: top;
   }
   th {
-    background: #e7ecf3;
-    color: #003366;
+    background: #f2f2f2;
+    color: #111;
     font-weight: 600;
   }
   tr:nth-child(even) { background: #f9f9f9; }
   td[colspan] { background: #f4f4f4; font-style: italic; }
 
   th:nth-child(1), td:nth-child(1) { width: 15%; }
-  th:nth-child(2), td:nth-child(2) { width: 25%; }
-  th:nth-child(3), td:nth-child(3) { width: 25%; }
+  th:nth-child(2), td:nth-child(2) { width: 25%; font-weight: 600; }
+  th:nth-child(3), td:nth-child(3) { width: 25%; color: #444; font-style: italic; }
   th:nth-child(4), td:nth-child(4) { width: 35%; }
 
-  /* ===== PDF BUTTON ===== */
+  /* ===== 📄 PDF BUTTON ===== */
   .pdf-btn {
     display: inline-block;
     background: #003366;
@@ -126,10 +126,20 @@
       font-weight: bold;
       display: block;
       margin-bottom: 2px;
-      color: #003366;
+      color: #111;
     }
     table.schedule td a {
       word-break: break-word;
+    }
+    .pdf-btn {
+      display: inline-block;
+      margin-top: 5px;
+      background: #003366;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      text-align: center;
     }
   }
 
