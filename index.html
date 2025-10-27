@@ -45,6 +45,31 @@
   th { background: #efefef; }
   tr:nth-child(even) { background: #f9f9f9; }
   td[colspan] { background: #f4f4f4; font-style: italic; }
+
+  th:nth-child(1), td:nth-child(1) { width: 18%; }
+  th:nth-child(2), td:nth-child(2) { width: 27%; }
+  th:nth-child(3), td:nth-child(3) { width: 25%; }
+  th:nth-child(4), td:nth-child(4) { width: 30%; }
+
+  @media (max-width: 700px) {
+    table, thead, tbody, th, td, tr { display: block; }
+    th { display: none; }
+    tr { margin-bottom: 1em; border-bottom: 2px solid #ddd; padding-bottom: 0.5em; }
+    td { border: none; position: relative; padding-left: 45%; }
+    td::before {
+      position: absolute;
+      left: 10px;
+      width: 35%;
+      white-space: nowrap;
+      font-weight: bold;
+      color: #555;
+    }
+    td:nth-of-type(1)::before { content: "Time:"; }
+    td:nth-of-type(2)::before { content: "Presenter:"; }
+    td:nth-of-type(3)::before { content: "Lab:"; }
+    td:nth-of-type(4)::before { content: "Title:"; }
+  }
+
   footer {
     border-top: 1px solid #ccc;
     margin-top: 40px;
@@ -97,28 +122,28 @@
 <h3>SESSION 1 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
 <table>
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>09:05 – 09:12</td><td>Yung-Hung Huang</td><td></td><td></td></tr>
-<tr><td>09:12 – 09:19</td><td>Yu-Chieh Huang</td><td></td><td></td></tr>
-<tr><td>09:19 – 09:26</td><td>Chen-Yu Hung</td><td></td><td></td></tr>
+<tr><td>09:05 – 09:12</td><td>Yung-Hung Huang</td><td>Chun-Wei Chen</td><td></td></tr>
+<tr><td>09:12 – 09:19</td><td>Yu-Chieh Huang</td><td>Kuei-Hsien Chen</td><td></td></tr>
+<tr><td>09:19 – 09:26</td><td>Chen-Yu (Jack) Hung</td><td>Chun-Wei Chen</td><td></td></tr>
 <tr><td colspan="4"><i>09:26 – 09:33  Session Transition & Setup</i></td></tr>
-<tr><td>09:33 – 09:40</td><td>Thipwadee Klom-In</td><td></td><td></td></tr>
+<tr><td>09:33 – 09:40</td><td>Thipwadee Klom-In</td><td>Szu-Yuan Chen</td><td></td></tr>
 <tr><td>09:40 – 09:47</td><td>Kongpop Limwatcharagul</td><td></td><td></td></tr>
-<tr><td>09:47 – 09:54</td><td>Kresanti Dewi Ngadimin</td><td></td><td></td></tr>
+<tr><td>09:47 – 09:54</td><td>Kresanti Dewi Ngadimin</td><td>Sung Jan Lin</td><td></td></tr>
 <tr><td colspan="4"><b>09:54 – 10:08 ☕ Session Transition & Break</b></td></tr>
 </table>
 
 <h3>SESSION 2 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
 <table>
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td></td><td></td></tr>
-<tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td><td></td><td></td></tr>
+<tr><td>10:08 – 10:20</td><td>Yi-Tsai Liang</td><td>Tsyr-Yan Dharma Yu</td><td></td></tr>
+<tr><td>10:20 – 10:32</td><td>Shuo-Yun Chang</td><td>Kuei-Hsien Chen</td><td></td></tr>
 <tr><td colspan="4"><i>10:32 – 10:38  Session Transition & Setup</i></td></tr>
 </table>
 
 <h3>SESSION 3 · FIRST-YEAR TALKS (Each talk 5 min + 2 min Q&A)</h3>
 <table>
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>10:38 – 10:45</td><td>Abhay Raju</td><td></td><td></td></tr>
+<tr><td>10:38 – 10:45</td><td>Abhay Raju</td><td>Kevin C.-W. Wu</td><td></td></tr>
 <tr><td>10:45 – 10:52</td><td>Arbaz Akhtar</td><td></td><td></td></tr>
 <tr><td>10:52 – 10:59</td><td>Rimsha Amjad</td><td></td><td></td></tr>
 <tr><td colspan="4"><b>10:59 – 11:08 ☕ Session Transition & Break</b></td></tr>
@@ -127,8 +152,8 @@
 <h3>SESSION 4 · CONTINUING STUDENTS (Each talk 10 min + 2 min Q&A)</h3>
 <table>
 <tr><th>Time</th><th>Presenter</th><th>Lab</th><th>Title</th></tr>
-<tr><td>11:08 – 11:20</td><td>Chun-Wei Chou</td><td></td><td></td></tr>
-<tr><td>11:20 – 11:32</td><td>Yen-Ting Lin</td><td></td><td></td></tr>
+<tr><td>11:08 – 11:20</td><td>Chun-Wei Chou</td><td>Ming-Hsi Chiang</td><td></td></tr>
+<tr><td>11:20 – 11:32</td><td>Yen-Ting Lin</td><td>Chi-Kung Ni</td><td></td></tr>
 <tr><td colspan="4"><i>11:32 – 12:00  Discussion, Group Photo & Closing Remarks</i></td></tr>
 </table>
 </section>
